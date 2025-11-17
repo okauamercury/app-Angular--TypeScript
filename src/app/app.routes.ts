@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/inbox',
+    redirectTo: 'elementos',
     pathMatch: 'full',
   },
   {
@@ -14,5 +14,13 @@ export const routes: Routes = [
   {
     path: 'elementos',
     loadComponent: () => import('./elementos/elementos.page').then( m => m.ElementosPage)
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./login/login.page').then( m => m.LoginPage)
+  },
+  {
+    path: 'reservas',
+    loadComponent: () => import('./reservas/reservas.page').then( m => m.ReservasPage)
   },
 ];

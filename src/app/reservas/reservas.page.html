@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Reservas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item class="md-4 ms-3" style="display: flex;">
+        <h2>Faça sua Reserva</h2><br><br>
+        <div class="mb-4">
+          <div class="calendario">
+            <ion-datetime-button datetime="datetime"></ion-datetime-button>
+            <ion-modal [keepContentsMounted]="true">
+              <ng-template>
+                <ion-datetime id="datetime"></ion-datetime>
+              </ng-template>
+            </ion-modal>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>

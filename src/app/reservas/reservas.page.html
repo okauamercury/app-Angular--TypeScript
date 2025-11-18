@@ -1,27 +1,51 @@
 <ion-header [translucent]="true">
-  <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>Reservas</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reservas</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-  <ion-content>
+<ion-content>
+  <ion-card color="ligth">
+    <ion-card-header style="background-color: black; color: white; border-radius: 8px;">
+      <ion-card-title>Dados do Cliente</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="cadastro">
+        <input type="text" placeholder="Nome completo">
+        <input type="text" name="" id="" placeholder="Idade">
+        <input type="mailto" placeholder="Digite seu Email">
+        <input type="tel" placeholder="Telefone de Contato">
+        <div class="btn-salvar">
+          <input type="submit" placeholder="Salvar Reserva">
+        </div>
+      </div>
+    </ion-card-content>
     <ion-list>
-      <ion-item class="md-4 ms-3" style="display: flex;">
-        <h2>Faça sua Reserva</h2><br><br>
-        <div class="mb-4">
-          <div class="calendario">
+      <ion-card-header style="background-color: black; color: white; border-radius: 8px;">
+        <ion-card-title>Informações para Reserva</ion-card-title>
+      </ion-card-header>
+      <ion-item>
+        <ion-card-content>
+          <div class="dados">
+            <input type="text" placeholder="Responsável pela Reserva">
+            <input type="number" placeholder="Quantidade de pessoas">
+            <input type="mailto" placeholder="Email do Responsável">
+            <input type="tel" placeholder="Telefone de Contato">
             <ion-datetime-button datetime="datetime"></ion-datetime-button>
             <ion-modal [keepContentsMounted]="true">
               <ng-template>
                 <ion-datetime id="datetime"></ion-datetime>
               </ng-template>
             </ion-modal>
+            <div class="btn-reserva">
+              <input type="submit" placeholder="Salvar Reserva">
+            </div>
           </div>
-        </div>
+        </ion-card-content>
       </ion-item>
     </ion-list>
-  </ion-content>
+  </ion-card>
+</ion-content>

@@ -12,7 +12,7 @@ import { mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutlin
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Home', url: '/folder/inbox', icon: 'home' },
+    { title: 'Home', url: '/home', icon: 'home' },
     { title: 'Elementos', url: '/elementos', icon: 'bandage-outline' },
     { title: 'Reservas', url: '/reservas', icon: 'heart' },
     { title: 'Archived', url: '/folder/archived', icon: 'archive' },

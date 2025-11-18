@@ -1,0 +1,28 @@
+nav{
+    display:flex;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+nav ul{
+    display: flex;
+    font-size: 20px;
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ 
+nav ul li a{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
